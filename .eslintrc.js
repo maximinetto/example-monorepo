@@ -1,15 +1,15 @@
 module.exports = {
   extends: [
-    "eslint:recommended",
     "standard",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:react/jsx-runtime",
     "prettier",
   ],
-  plugins: ["react", "jsx-a11y", "import"],
+  plugins: ["react", "jsx-a11y"],
   settings: {
     react: {
       version: "detect",
@@ -19,11 +19,6 @@ module.exports = {
         project: ["./server/tsconfig.json"],
         extensions: [".js", ".ts", ".tsx", ".d.ts", ".json"],
       },
-    },
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
     },
   },
 

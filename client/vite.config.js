@@ -3,6 +3,7 @@ import { resolve } from "path";
 import eslint from "vite-plugin-eslint";
 
 const components = resolve(__dirname, "src", "components");
+const hooks = resolve(__dirname, "src", "hooks");
 
 // https://vitejs.dev/config/
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
   resolve: {
     alias: {
       components,
+      hooks,
     },
   },
 };
