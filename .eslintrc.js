@@ -28,5 +28,6 @@ module.exports = {
     "examples",
     "scripts",
     ".eslintrc.js",
+    "configureAlias.js",
   ],
 };
